@@ -22,6 +22,7 @@ spec:
     spec:
       containers:
       - image: qaxim/hello-nodejs:v1
+        imagePullPolicy: Always
         name: hello-nodejs
         ports:
         - containerPort: 9000

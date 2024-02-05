@@ -1,3 +1,4 @@
+const os = require("os");
 const express = require("express");
 const logger = require("morgan");
 const app = express();
@@ -8,6 +9,8 @@ app.use(logger("combined"));
 const PORT = 9000;
 
 app.get("/health", (req, res) => res.status(200).json({ status: "OK" }));
-app.get("/", (req, res) => res.status(200).json({ info: "Hello, World!" }));
+app.get("/", (req, res) =>
+  res.status(200).json({ info: `Hello, World from ${os.hostname()}` })
+);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
