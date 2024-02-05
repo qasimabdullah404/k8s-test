@@ -14,7 +14,7 @@ Spin a local Kubernetes cluster using Minikube with following addons enabled:
 
 ### Deploy to teh cluster
 
-1. kubectl apply -f ./k8s/manifest.yaml
+1. `kubectl apply -f ./k8s/manifest.yaml`
 
 ### Tunnel traffic
 
