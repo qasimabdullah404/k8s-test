@@ -12,7 +12,7 @@ Spin a local Kubernetes cluster using Minikube with following addons enabled:
 1. Ingress (`minikube addons enable ingress`)
 2. Metrics Server (`minikube addons enable metrics-server`)
 
-### Deploy to teh cluster
+### Deploy to the cluster
 
 1. `kubectl apply -f ./k8s/manifest.yaml`
 
